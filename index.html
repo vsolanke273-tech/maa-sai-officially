@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Maa Sai Classes | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>s
+    // Show welcome screen only on first visit
+    document.addEventListener("DOMContentLoaded", function() {
+      if (!sessionStorage.getItem("visited")) {
+        document.getElementById("welcomeScreen").style.display = "flex";
+        sessionStorage.setItem("visited", "true");
+      }
+    });
+    function continueToWebsite() {
+      document.getElementById("welcomeScreen").style.display = "none";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <div class="welcome-content">
+      <h1>Welcome to Maa Sai Classes 👋</h1>
+      <button onclick="continueToWebsite()">Continue to Website</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Maa Sai Classes</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="tagline">
+      <p>Quality Education for Every Student</p>
+    </div>
+    <a href="tel:9624626862" class="call-now-btn">📞 Call Now</a>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919624626862" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>📍 Plot No. 114, Shivnagar, Behind Harinagar-2, Udhna, Surat</p>
+      <p>📸 <a href="https://instagram.com/rakhiben_solanke123" target="_blank">@rakhiben_solanke123</a></p>
+      <p>© 2025 Maa Sai Classes | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script>
+// ✅ Welcome Screen
+document.addEventListener("DOMContentLoaded", () => {
+  if (!localStorage.getItem("visited")) {
+    const popup = document.createElement("div");
+    popup.innerHTML = `
+      <div style="
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center;
+        z-index: 9999; color: #fff; font-family: Poppins; flex-direction: column; text-align: center;">
+        <h1>🎓 Welcome to Maa Sai Classes</h1>
+        <p>Your Success, Our Mission!</p>
+        <button id="continueBtn" style="
+          padding: 10px 20px; margin-top: 20px; border: none; border-radius: 8px;
+          background: #007bff; color: white; font-size: 1rem; cursor: pointer;">Continue</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+
+    document.getElementById("continueBtn").addEventListener("click", () => {
+      popup.remove();
+      localStorage.setItem("visited", "true");
+    });
+  }
+});
+
+// ✅ WhatsApp Icon Animation
+setInterval(() => {
+  const icon = document.querySelector(".whatsapp-float");
+  if(icon) {
+    icon.style.transform = "scale(1.2)";
+    icon.style.boxShadow = "0 0 20px #25D366";
+    setTimeout(() => {
+      icon.style.transform = "scale(1)";
+      icon.style.boxShadow = "none";
+    }, 400);
+  }
+}, 3000);
+</script>
+
+</body>
+</html>

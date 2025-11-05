@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Contact | Maa Sai Classes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Maa Sai Classes</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+      
+      <div class="contact-info">
+        <h2>📍 Our Location</h2>
+        <p>Plot No. 114, Shivnagar, Behind Harinagar-2, Udhna, Surat</p>
+
+        <h2>📞 Call Us</h2>
+        <p><a href="tel:9624626862">+91 9624626862</a></p>
+
+        <h2>📸 Instagram</h2>
+        <p><a href="https://instagram.com/rakhiben_solanke123" target="_blank">@rakhiben_solanke123</a></p>
+
+        <div class="contact-buttons">
+          <a href="https://wa.me/919624626862" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+          <a href="tel:9624626862" class="call-btn">📞 Call Now</a>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <!-- Static Google Map -->
+        <iframe 
+          src="https://www.google.com/maps?q=plot+no+114+shivnagar+behind+harinagar+2+udhna+surat&output=embed"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>📍 Plot No. 114, Shivnagar, Behind Harinagar-2, Udhna, Surat</p>
+      <p>📸 <a href="https://instagram.com/rakhiben_solanke123" target="_blank">@rakhiben_solanke123</a></p>
+      <p>© 2025 Maa Sai Classes | All Rights Reserved</p>
+    </div>
+  </footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+</body>
+</html>

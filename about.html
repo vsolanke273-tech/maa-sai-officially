@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>About | Maa Sai Classes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Maa Sai Classes</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <h1>About Maa Sai Classes</h1>
+      <p>Maa Sai Classes is a trusted institute in Surat dedicated to providing high-quality education and personal attention to every student. With expert teachers and modern teaching methods, we aim to build strong academic foundations and confidence in our students.</p>
+
+      <h2>🎯 Our Mission</h2>
+      <p>To empower students with knowledge and skills that help them excel in academics and life.</p>
+
+      <h2>🌟 Our Vision</h2>
+      <p>To become the most respected and result-oriented coaching institute in Surat, known for discipline, dedication, and student success.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>📍 Plot No. 114, Shivnagar, Behind Harinagar-2, Udhna, Surat</p>
+      <p>📸 <a href="https://instagram.com/rakhiben_solanke123" target="_blank">@rakhiben_solanke123</a></p>
+      <p>© 2025 Maa Sai Classes | All Rights Reserved</p>
+    </div>
+  </footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+</body>
+</html>
