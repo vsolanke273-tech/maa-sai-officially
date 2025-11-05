@@ -279,3 +279,15 @@ footer a:hover {
     width: 90%;
   }
 }
+  .logo {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.logo:hover {
+  color: #007bff;
+  transition: 0.3s;
+}
+
+
